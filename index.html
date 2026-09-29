@@ -4,11 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Hà Nội | Việt Nam trong tim tôi</title>
+    <title>VIỆT NAM | Đất Nước Tôi Yêu</title>
 
     <meta
         name="description"
-        content="Khám phá Hà Nội - Thủ đô ngàn năm văn hiến của Việt Nam."
+        content="Khám phá Việt Nam - đất nước của thiên nhiên, văn hóa, lịch sử và con người."
+    >
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap"
+        rel="stylesheet"
     >
 
     <link rel="stylesheet" href="style.css">
@@ -17,90 +25,157 @@
 <body>
 
     <!-- =========================
-         HEADER
+         LOADING
+    ========================== -->
+    <div id="loader">
+        <div class="loader-content">
+            <div class="loader-flag">🇻🇳</div>
+            <div class="loader-title">VIỆT NAM</div>
+            <div class="loader-line"></div>
+            <p>Đang khám phá vẻ đẹp Việt Nam...</p>
+        </div>
+    </div>
+
+
+    <!-- =========================
+         HEADER / NAVBAR
     ========================== -->
     <header class="header" id="header">
 
         <div class="container nav-container">
 
-            <a href="../index.html" class="logo">
-                <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg"
-                    alt="Cờ Việt Nam"
-                >
-                <span>VIỆT NAM</span>
-            </a>
+            <a href="#home" class="logo">
+    <img
+        src="https://upload.wikimedia.org/wikipedia/commons/2/21/Flag_of_Vietnam.svg"
+        alt="Quốc kỳ Việt Nam"
+    >
+    <span>VIỆT NAM</span>
+</a>
 
-            <nav class="nav" id="nav">
+            <nav class="navbar" id="navbar">
 
-                <a href="#home">Trang chủ</a>
+                <a href="#home" class="nav-link active">
+                    Trang chủ
+                </a>
 
-                <a href="#about">Giới thiệu</a>
+                <a href="#gioi-thieu" class="nav-link">
+                    Giới thiệu
+                </a>
 
-                <a href="#places">Điểm đến</a>
+                <a href="#dia-danh" class="nav-link">
+                    Địa danh
+                </a>
 
-                <a href="#history">Lịch sử</a>
+                <a href="#am-thuc" class="nav-link">
+                    Ẩm thực
+                </a>
 
-                <a href="#culture">Văn hóa</a>
+                <a href="#van-hoa" class="nav-link">
+                    Văn hóa
+                </a>
 
-                <a href="#food">Ẩm thực</a>
+                <a href="#lich-su" class="nav-link">
+                    Lịch sử
+                </a>
+
+                <a href="#tinh-thanh" class="nav-link">
+                    Tỉnh, thành
+                </a>
 
             </nav>
 
-            <a href="../index.html" class="back-home">
-                ← 34 Tỉnh, Thành
-            </a>
+            <div class="nav-actions">
 
-            <button
-                class="menu-btn"
-                id="menuBtn"
-                type="button"
-                aria-label="Mở menu"
-            >
-                ☰
-            </button>
+                <button
+                    class="theme-btn"
+                    id="themeBtn"
+                    aria-label="Đổi giao diện"
+                    title="Đổi giao diện"
+                >
+                    🌙
+                </button>
+
+                <button
+                    class="menu-btn"
+                    id="menuBtn"
+                    aria-label="Mở menu"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+            </div>
 
         </div>
 
     </header>
 
 
-    <!-- =========================
-         HERO
-    ========================== -->
     <main>
 
+        <!-- =========================
+             HERO
+        ========================== -->
         <section class="hero" id="home">
 
             <div class="hero-overlay"></div>
 
-            <div class="hero-content">
+            <div class="hero-content container">
 
-                <span class="location">
-                     THỦ ĐÔ VIỆT NAM
-                </span>
+                <div class="hero-badge">
+                     CHÀO MỪNG ĐẾN VỚI VIỆT NAM
+                </div>
 
-                <h1>HÀ NỘI</h1>
+                <h1>
+                    VIỆT NAM
+                    <span>Vẻ đẹp bất tận</span>
+                </h1>
 
-                <h2>Thủ đô ngàn năm văn hiến</h2>
-
-                <p>
-                    Hà Nội là trái tim của Việt Nam, nơi hội tụ những giá trị
-                    lịch sử, văn hóa và vẻ đẹp thanh lịch được gìn giữ qua
-                    nhiều thế hệ.
+                <p class="hero-description">
+                    Một đất nước hình chữ S với những cảnh sắc thiên nhiên
+                    tuyệt đẹp, nền văn hóa giàu bản sắc và những con người
+                    thân thiện, nghĩa tình.
                 </p>
 
-                <a href="#about" class="hero-btn">
-                    Khám phá Hà Nội
-                    <span>↓</span>
-                </a>
+                <div class="hero-buttons">
+
+                    <a href="#gioi-thieu" class="btn btn-primary">
+                        Khám phá Việt Nam
+                        <span>→</span>
+                    </a>
+
+                    <a href="#dia-danh" class="btn btn-outline">
+                        Xem địa danh
+                    </a>
+
+                </div>
+
+                <div class="hero-stats">
+
+                    <div class="hero-stat">
+                        <strong>34+</strong>
+                        <span>Tỉnh, thành</span>
+                    </div>
+
+                    <div class="hero-stat">
+                        <strong>3.260+</strong>
+                        <span>km bờ biển</span>
+                    </div>
+
+                    <div class="hero-stat">
+                        <strong>4.000+</strong>
+                        <span>Năm lịch sử</span>
+                    </div>
+
+                </div>
 
             </div>
 
-            <div class="hero-scroll">
+            <a href="#gioi-thieu" class="scroll-down">
                 <span>Cuộn để khám phá</span>
-                <strong>↓</strong>
-            </div>
+                <b>↓</b>
+            </a>
 
         </section>
 
@@ -108,102 +183,100 @@
         <!-- =========================
              GIỚI THIỆU
         ========================== -->
-        <section class="section about" id="about">
+        <section class="section intro-section" id="gioi-thieu">
 
-            <div class="section-title">
+            <div class="container">
 
-                <span>01 — GIỚI THIỆU</span>
+                <div class="section-heading reveal">
 
-                <h2>
-                    Nơi thời gian giao hòa
-                </h2>
+                    <span class="section-tag">
+                        🇻🇳 VỀ VIỆT NAM
+                    </span>
 
-                <p>
-                    Hà Nội mang trong mình vẻ đẹp vừa cổ kính vừa hiện đại.
-                </p>
-
-            </div>
-
-
-            <div class="about-grid">
-
-                <div class="about-text">
+                    <h2>
+                        Một Việt Nam
+                        <span>đầy tự hào</span>
+                    </h2>
 
                     <p>
-                        Hà Nội là thủ đô của Việt Nam, nằm ở khu vực phía Bắc
-                        đất nước. Thành phố nổi bật với lịch sử lâu đời,
-                        những khu phố cổ, hồ nước xanh và nhiều công trình
-                        văn hóa đặc sắc.
-                    </p>
-
-                    <p>
-                        Từ những con phố nhỏ của khu phố cổ đến những đại lộ
-                        hiện đại, Hà Nội tạo nên một không gian đặc biệt,
-                        nơi truyền thống và nhịp sống mới cùng tồn tại.
-                    </p>
-
-                    <p>
-                        Hà Nội không chỉ là trung tâm chính trị mà còn là một
-                        trong những trung tâm văn hóa, giáo dục và kinh tế
-                        quan trọng của Việt Nam.
+                        Việt Nam là quốc gia nằm ở phía Đông Nam Á,
+                        sở hữu thiên nhiên đa dạng, văn hóa lâu đời
+                        và nhiều di sản nổi tiếng thế giới.
                     </p>
 
                 </div>
 
 
-                <div class="about-box">
+                <div class="intro-grid">
 
-                    <div class="stat">
+                    <div class="intro-image reveal">
 
-                        <strong>🏛️</strong>
+                        <div class="image-card">
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLaK_EIEdmG2Zd3Ng-FRuzmGGlT7ffrgRaWP_qsCt9IF0ZcZSZvasmrK0&s=10"
+                                alt="Phong cảnh Việt Nam"
+                                loading="lazy"
+                            >
 
-                        <div>
-                            <b>Thủ đô Việt Nam</b>
-                            <span>
-                                Trung tâm chính trị của cả nước
-                            </span>
+                            <div class="image-caption">
+                                <span>🌾</span>
+                                <div>
+                                    <strong>Vẻ đẹp Việt Nam</strong>
+                                    <small>Từ núi rừng đến biển cả</small>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
 
 
-                    <div class="stat">
+                    <div class="intro-content reveal">
 
-                        <strong>📜</strong>
+                        <h3>
+                            Đất nước hình chữ S
+                        </h3>
 
-                        <div>
-                            <b>Lịch sử lâu đời</b>
-                            <span>
-                                Gắn liền với nhiều dấu mốc lịch sử Việt Nam
-                            </span>
-                        </div>
+                        <p>
+                            Việt Nam có hình dáng đặc trưng như chữ S,
+                            trải dài từ Bắc vào Nam. Mỗi vùng miền lại
+                            mang một vẻ đẹp riêng, tạo nên một bức tranh
+                            Việt Nam đa dạng và đầy màu sắc.
+                        </p>
 
-                    </div>
-
-
-                    <div class="stat">
-
-                        <strong>🌿</strong>
-
-                        <div>
-                            <b>Thành phố xanh</b>
-                            <span>
-                                Nổi bật với nhiều hồ nước và không gian xanh
-                            </span>
-                        </div>
-
-                    </div>
+                        <p>
+                            Từ những dãy núi hùng vĩ phía Bắc, những bãi
+                            biển xanh ngát miền Trung cho đến vùng sông
+                            nước miền Tây, Việt Nam luôn có những điều
+                            thú vị để khám phá.
+                        </p>
 
 
-                    <div class="stat">
+                        <div class="feature-list">
 
-                        <strong>🎭</strong>
+                            <div class="feature-item">
+                                <span class="feature-icon">🏔️</span>
+                                <div>
+                                    <strong>Thiên nhiên</strong>
+                                    <p>Núi non, biển đảo và những cánh rừng xanh.</p>
+                                </div>
+                            </div>
 
-                        <div>
-                            <b>Văn hóa đặc sắc</b>
-                            <span>
-                                Nơi lưu giữ nhiều giá trị truyền thống
-                            </span>
+                            <div class="feature-item">
+                                <span class="feature-icon">🏛️</span>
+                                <div>
+                                    <strong>Di sản</strong>
+                                    <p>Nhiều di sản văn hóa và thiên nhiên nổi tiếng.</p>
+                                </div>
+                            </div>
+
+                            <div class="feature-item">
+                                <span class="feature-icon">❤️</span>
+                                <div>
+                                    <strong>Con người</strong>
+                                    <p>Thân thiện, hiếu khách và giàu tình cảm.</p>
+                                </div>
+                            </div>
+
                         </div>
 
                     </div>
@@ -216,214 +289,150 @@
 
 
         <!-- =========================
-             ĐIỂM ĐẾN
+             KHÁM PHÁ 3 MIỀN
         ========================== -->
-        <section class="section places" id="places">
+        <section class="section regions-section">
 
-            <div class="section-title">
+            <div class="container">
 
-                <span>02 — ĐIỂM ĐẾN</span>
+                <div class="section-heading reveal">
 
-                <h2>
-                    Những biểu tượng của Hà Nội
-                </h2>
+                    <span class="section-tag">
+                        🗺️ KHÁM PHÁ
+                    </span>
 
-                <p>
-                    Những địa danh góp phần tạo nên vẻ đẹp riêng của Thủ đô.
-                </p>
+                    <h2>
+                        Ba miền
+                        <span>một Việt Nam</span>
+                    </h2>
 
-            </div>
+                    <p>
+                        Mỗi vùng đất mang một nét đẹp riêng,
+                        nhưng tất cả cùng tạo nên bản sắc Việt Nam.
+                    </p>
 
+                </div>
 
-            <div class="cards">
 
+                <div class="regions-grid">
 
-                <!-- Hồ Hoàn Kiếm -->
-                <article class="card">
+                    <!-- Miền Bắc -->
+                    <article class="region-card reveal">
 
-                    <div class="card-image hoan-kiem">
+                        <div class="region-image">
 
-                        <span class="card-number">
-                            01
-                        </span>
+                            <img
+                                src="https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=900&q=80"
+                                alt="Miền Bắc Việt Nam"
+                                loading="lazy"
+                            >
 
-                        <span class="card-label">
-                            HỒ HOÀN KIẾM
-                        </span>
+                            <span class="region-number">01</span>
 
-                    </div>
+                        </div>
 
-                    <div class="card-content">
+                        <div class="region-content">
 
-                        <h3>
-                            Hồ Hoàn Kiếm
-                        </h3>
+                            <span class="region-label">
+                                MIỀN BẮC
+                            </span>
 
-                        <p>
-                            Không gian biểu tượng giữa lòng Hà Nội,
-                            gắn liền với nhiều câu chuyện và giá trị
-                            lịch sử của Thủ đô.
-                        </p>
+                            <h3>
+                                Nét đẹp cổ kính
+                            </h3>
 
-                    </div>
+                            <p>
+                                Hà Nội, Hạ Long, Sa Pa, Ninh Bình
+                                và những vùng núi phía Bắc.
+                            </p>
 
-                </article>
+                            <a href="#dia-danh" class="text-link">
+                                Khám phá →
+                            </a>
 
+                        </div>
 
-                <!-- Văn Miếu -->
-                <article class="card">
+                    </article>
 
-                    <div class="card-image van-mieu">
 
-                        <span class="card-number">
-                            02
-                        </span>
+                    <!-- Miền Trung -->
+                    <article class="region-card reveal">
 
-                        <span class="card-label">
-                            VĂN MIẾU
-                        </span>
+                        <div class="region-image">
 
-                    </div>
+                            <img
+                                src="https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?auto=format&fit=crop&w=900&q=80"
+                                alt="Miền Trung Việt Nam"
+                                loading="lazy"
+                            >
 
-                    <div class="card-content">
+                            <span class="region-number">02</span>
 
-                        <h3>
-                            Văn Miếu – Quốc Tử Giám
-                        </h3>
+                        </div>
 
-                        <p>
-                            Di tích văn hóa nổi tiếng, gắn với truyền thống
-                            hiếu học và lịch sử giáo dục của Việt Nam.
-                        </p>
+                        <div class="region-content">
 
-                    </div>
+                            <span class="region-label">
+                                MIỀN TRUNG
+                            </span>
 
-                </article>
+                            <h3>
+                                Nắng gió & di sản
+                            </h3>
 
+                            <p>
+                                Huế, Hội An, Đà Nẵng, Phong Nha
+                                và những bờ biển tuyệt đẹp.
+                            </p>
 
-                <!-- Lăng Bác -->
-                <article class="card">
+                            <a href="#dia-danh" class="text-link">
+                                Khám phá →
+                            </a>
 
-                    <div class="card-image lang-bac">
+                        </div>
 
-                        <span class="card-number">
-                            03
-                        </span>
+                    </article>
 
-                        <span class="card-label">
-                            QUẢNG TRƯỜNG BA ĐÌNH
-                        </span>
 
-                    </div>
+                    <!-- Miền Nam -->
+                    <article class="region-card reveal">
 
-                    <div class="card-content">
+                        <div class="region-image">
 
-                        <h3>
-                            Quảng trường Ba Đình
-                        </h3>
+                            <img
+                                src="https://images.unsplash.com/photo-1529253355930-ddbe423a2ac7?auto=format&fit=crop&w=900&q=80"
+                                alt="Miền Nam Việt Nam"
+                                loading="lazy"
+                            >
 
-                        <p>
-                            Không gian lịch sử quan trọng của Hà Nội,
-                            nơi gắn với những sự kiện lớn của đất nước.
-                        </p>
+                            <span class="region-number">03</span>
 
-                    </div>
+                        </div>
 
-                </article>
+                        <div class="region-content">
 
+                            <span class="region-label">
+                                MIỀN NAM
+                            </span>
 
-                <!-- Phố cổ -->
-                <article class="card">
+                            <h3>
+                                Sông nước & năng động
+                            </h3>
 
-                    <div class="card-image pho-co">
+                            <p>
+                                Thành phố Hồ Chí Minh, Cần Thơ,
+                                Phú Quốc và miền Tây sông nước.
+                            </p>
 
-                        <span class="card-number">
-                            04
-                        </span>
+                            <a href="#dia-danh" class="text-link">
+                                Khám phá →
+                            </a>
 
-                        <span class="card-label">
-                            PHỐ CỔ HÀ NỘI
-                        </span>
+                        </div>
 
-                    </div>
+                    </article>
 
-                    <div class="card-content">
-
-                        <h3>
-                            Phố cổ Hà Nội
-                        </h3>
-
-                        <p>
-                            Những con phố mang dấu ấn lịch sử, kiến trúc
-                            và nhịp sống đặc trưng của Hà Nội xưa.
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-                <!-- Hoàng thành -->
-                <article class="card">
-
-                    <div class="card-image hoang-thanh">
-
-                        <span class="card-number">
-                            05
-                        </span>
-
-                        <span class="card-label">
-                            HOÀNG THÀNH
-                        </span>
-
-                    </div>
-
-                    <div class="card-content">
-
-                        <h3>
-                            Hoàng thành Thăng Long
-                        </h3>
-
-                        <p>
-                            Di sản văn hóa đặc biệt, phản ánh chiều sâu
-                            lịch sử của kinh thành Thăng Long.
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-                <!-- Hồ Tây -->
-                <article class="card">
-
-                    <div class="card-image ho-tay">
-
-                        <span class="card-number">
-                            06
-                        </span>
-
-                        <span class="card-label">
-                            HỒ TÂY
-                        </span>
-
-                    </div>
-
-                    <div class="card-content">
-
-                        <h3>
-                            Hồ Tây
-                        </h3>
-
-                        <p>
-                            Một trong những hồ nước lớn và nổi tiếng,
-                            tạo nên không gian thoáng đãng giữa thành phố.
-                        </p>
-
-                    </div>
-
-                </article>
-
+                </div>
 
             </div>
 
@@ -431,198 +440,163 @@
 
 
         <!-- =========================
-             THIÊN NHIÊN
+             ĐỊA DANH
         ========================== -->
-        <section class="section nature">
+        <section class="section destinations-section" id="dia-danh">
 
-            <div class="section-title">
+            <div class="container">
 
-                <span>03 — THIÊN NHIÊN</span>
+                <div class="section-heading heading-between reveal">
 
-                <h2>
-                    Một Hà Nội xanh
-                </h2>
+                    <div>
+                        <span class="section-tag">
+                            📍 ĐỊA DANH NỔI BẬT
+                        </span>
 
-                <p>
-                    Những khoảng xanh tạo nên nhịp sống nhẹ nhàng của Thủ đô.
-                </p>
-
-            </div>
-
-
-            <div class="nature-grid">
-
-
-                <article class="nature-item">
-
-                    <div class="nature-icon">
-                        🌳
+                        <h2>
+                            Những nơi
+                            <span>không thể bỏ lỡ</span>
+                        </h2>
                     </div>
 
-                    <h3>
-                        Cây xanh
-                    </h3>
+                    <a href="#" class="btn btn-small">
+                        Xem tất cả →
+                    </a>
 
-                    <p>
-                        Những hàng cây cổ thụ tạo nên nét đặc trưng
-                        cho nhiều tuyến phố Hà Nội.
-                    </p>
-
-                </article>
+                </div>
 
 
-                <article class="nature-item">
+                <div class="destination-grid">
 
-                    <div class="nature-icon">
-                        🌊
-                    </div>
+                    <article class="destination-card destination-large reveal">
 
-                    <h3>
-                        Hồ nước
-                    </h3>
+                        <img
+                            src="https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1400&q=85"
+                            alt="Vịnh Hạ Long"
+                            loading="lazy"
+                        >
 
-                    <p>
-                        Hồ Hoàn Kiếm, Hồ Tây và nhiều mặt nước khác
-                        góp phần tạo nên cảnh quan đặc biệt của thành phố.
-                    </p>
+                        <div class="destination-overlay">
 
-                </article>
+                            <span>QUẢNG NINH</span>
 
+                            <h3>
+                                Vịnh Hạ Long
+                            </h3>
 
-                <article class="nature-item">
+                            <p>
+                                Kỳ quan thiên nhiên nổi tiếng của Việt Nam.
+                            </p>
 
-                    <div class="nature-icon">
-                        🌅
-                    </div>
+                            <a href="#" class="destination-link">
+                                Khám phá địa danh →
+                            </a>
 
-                    <h3>
-                        Những buổi sớm
-                    </h3>
+                        </div>
 
-                    <p>
-                        Hà Nội buổi sáng mang một vẻ đẹp yên bình,
-                        khác biệt với nhịp sống sôi động ban ngày.
-                    </p>
-
-                </article>
+                    </article>
 
 
-            </div>
+                    <article class="destination-card reveal">
 
-        </section>
+                        <img
+                            src="https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?auto=format&fit=crop&w=900&q=80"
+                            alt="Hội An"
+                            loading="lazy"
+                        >
 
+                        <div class="destination-overlay">
 
-        <!-- =========================
-             LỊCH SỬ
-        ========================== -->
-        <section class="section history" id="history">
+                            <span>QUẢNG NAM</span>
 
-            <div class="section-title">
+                            <h3>
+                                Hội An
+                            </h3>
 
-                <span>04 — LỊCH SỬ</span>
+                            <p>
+                                Phố cổ mang vẻ đẹp bình yên.
+                            </p>
 
-                <h2>
-                    Dấu ấn Thăng Long
-                </h2>
+                        </div>
 
-                <p>
-                    Hà Nội gắn liền với nhiều giai đoạn quan trọng
-                    trong lịch sử Việt Nam.
-                </p>
-
-            </div>
-
-
-            <div class="timeline">
+                    </article>
 
 
-                <article class="timeline-item">
+                    <article class="destination-card reveal">
 
-                    <div class="timeline-year">
-                        1010
-                    </div>
+                        <img
+                            src="https://images.unsplash.com/photo-1509030450996-dd1a26dda07a?auto=format&fit=crop&w=900&q=80"
+                            alt="Ruộng bậc thang Việt Nam"
+                            loading="lazy"
+                        >
 
-                    <div class="timeline-content">
+                        <div class="destination-overlay">
 
-                        <h3>
-                            Chiếu dời đô
-                        </h3>
+                            <span>LÀO CAI</span>
 
-                        <p>
-                            Vua Lý Thái Tổ quyết định dời đô từ Hoa Lư
-                            về Đại La và đổi tên thành Thăng Long.
-                        </p>
+                            <h3>
+                                Sa Pa
+                            </h3>
 
-                    </div>
+                            <p>
+                                Núi rừng và ruộng bậc thang tuyệt đẹp.
+                            </p>
 
-                </article>
+                        </div>
 
-
-                <article class="timeline-item">
-
-                    <div class="timeline-year">
-                        1428
-                    </div>
-
-                    <div class="timeline-content">
-
-                        <h3>
-                            Thời Lê
-                        </h3>
-
-                        <p>
-                            Thăng Long tiếp tục giữ vai trò quan trọng
-                            trong đời sống chính trị và văn hóa của đất nước.
-                        </p>
-
-                    </div>
-
-                </article>
+                    </article>
 
 
-                <article class="timeline-item">
+                    <article class="destination-card reveal">
 
-                    <div class="timeline-year">
-                        1945
-                    </div>
+                        <img
+                            src="https://images.unsplash.com/photo-1583417319070-4a69db38a482?auto=format&fit=crop&w=900&q=80"
+                            alt="Đà Nẵng"
+                            loading="lazy"
+                        >
 
-                    <div class="timeline-content">
+                        <div class="destination-overlay">
 
-                        <h3>
-                            Mùa thu lịch sử
-                        </h3>
+                            <span>ĐÀ NẴNG</span>
 
-                        <p>
-                            Hà Nội trở thành một địa điểm quan trọng
-                            trong những sự kiện lịch sử của Việt Nam hiện đại.
-                        </p>
+                            <h3>
+                                Đà Nẵng
+                            </h3>
 
-                    </div>
+                            <p>
+                                Thành phố biển hiện đại và năng động.
+                            </p>
 
-                </article>
+                        </div>
+
+                    </article>
 
 
-                <article class="timeline-item">
+                    <article class="destination-card reveal">
 
-                    <div class="timeline-year">
-                        HÔM NAY
-                    </div>
+                        <img
+                            src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&w=900&q=80"
+                            alt="Phú Quốc"
+                            loading="lazy"
+                        >
 
-                    <div class="timeline-content">
+                        <div class="destination-overlay">
 
-                        <h3>
-                            Thủ đô hiện đại
-                        </h3>
+                            <span>KIÊN GIANG</span>
 
-                        <p>
-                            Hà Nội tiếp tục phát triển thành một trung tâm
-                            lớn về chính trị, văn hóa, giáo dục và kinh tế.
-                        </p>
+                            <h3>
+                                Phú Quốc
+                            </h3>
 
-                    </div>
+                            <p>
+                                Đảo ngọc với biển xanh và thiên nhiên.
+                            </p>
 
-                </article>
+                        </div>
 
+                    </article>
+
+                </div>
 
             </div>
 
@@ -632,97 +606,115 @@
         <!-- =========================
              ẨM THỰC
         ========================== -->
-        <section class="section food" id="food">
+        <section class="section food-section" id="am-thuc">
 
-            <div class="section-title">
+            <div class="container">
 
-                <span>05 — ẨM THỰC</span>
+                <div class="section-heading reveal">
 
-                <h2>
-                    Hương vị Hà Nội
-                </h2>
+                    <span class="section-tag">
+                        🍜 ẨM THỰC VIỆT NAM
+                    </span>
 
-                <p>
-                    Ẩm thực Hà Nội nổi bật bởi sự tinh tế và đa dạng.
-                </p>
-
-            </div>
-
-
-            <div class="food-grid">
-
-
-                <article class="food-card">
-
-                    <div class="food-icon">
-                        🍜
-                    </div>
-
-                    <h3>
-                        Phở Hà Nội
-                    </h3>
+                    <h2>
+                        Hương vị
+                        <span>quê hương</span>
+                    </h2>
 
                     <p>
-                        Một món ăn nổi tiếng gắn liền với hình ảnh
-                        ẩm thực Hà Nội.
+                        Ẩm thực Việt Nam nổi tiếng bởi sự đa dạng,
+                        tinh tế và hài hòa trong từng món ăn.
                     </p>
 
-                </article>
+                </div>
 
 
-                <article class="food-card">
+                <div class="food-grid">
 
-                    <div class="food-icon">
-                        🍚
-                    </div>
+                    <article class="food-card reveal">
 
-                    <h3>
-                        Cốm
-                    </h3>
+                        <div class="food-image">
 
-                    <p>
-                        Hương vị thanh nhẹ mang nét đặc trưng
-                        của mùa thu Hà Nội.
-                    </p>
+                            <img
+                                src="https://images.unsplash.com/photo-1582878826629-29b7ad1cdc43?auto=format&fit=crop&w=800&q=85"
+                                alt="Phở Việt Nam"
+                                loading="lazy"
+                            >
 
-                </article>
+                        </div>
 
+                        <div class="food-content">
 
-                <article class="food-card">
+                            <span>🍲 MÓN ĂN</span>
 
-                    <div class="food-icon">
-                        🍢
-                    </div>
+                            <h3>Phở</h3>
 
-                    <h3>
-                        Bún chả
-                    </h3>
+                            <p>
+                                Món ăn nổi tiếng với nước dùng
+                                thơm ngon và bánh phở mềm.
+                            </p>
 
-                    <p>
-                        Món ăn quen thuộc với thịt nướng,
-                        bún và nước chấm đặc trưng.
-                    </p>
+                        </div>
 
-                </article>
+                    </article>
 
 
-                <article class="food-card">
+                    <article class="food-card reveal">
 
-                    <div class="food-icon">
-                        ☕
-                    </div>
+                        <div class="food-image">
 
-                    <h3>
-                        Cà phê Hà Nội
-                    </h3>
+                            <img
+                                src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=800&q=85"
+                                alt="Bánh mì Việt Nam"
+                                loading="lazy"
+                            >
 
-                    <p>
-                        Văn hóa cà phê góp phần tạo nên nhịp sống
-                        rất riêng của thành phố.
-                    </p>
+                        </div>
 
-                </article>
+                        <div class="food-content">
 
+                            <span>🥖 MÓN ĂN</span>
+
+                            <h3>Bánh mì</h3>
+
+                            <p>
+                                Sự kết hợp độc đáo giữa bánh mì
+                                giòn và nhiều loại nhân.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="food-card reveal">
+
+                        <div class="food-image">
+
+                            <img
+                                src="https://images.unsplash.com/photo-1555126634-323283e090fa?auto=format&fit=crop&w=800&q=85"
+                                alt="Món ăn Việt Nam"
+                                loading="lazy"
+                            >
+
+                        </div>
+
+                        <div class="food-content">
+
+                            <span>🍜 ĐẶC SẢN</span>
+
+                            <h3>Bún bò Huế</h3>
+
+                            <p>
+                                Hương vị đậm đà đặc trưng của
+                                vùng đất cố đô.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
 
             </div>
 
@@ -732,105 +724,99 @@
         <!-- =========================
              VĂN HÓA
         ========================== -->
-        <section class="section culture" id="culture">
+        <section class="section culture-section" id="van-hoa">
 
-            <div class="section-title">
+            <div class="container">
 
-                <span>06 — VĂN HÓA</span>
+                <div class="culture-wrapper">
 
-                <h2>
-                    Nét thanh lịch Hà Nội
-                </h2>
+                    <div class="culture-content reveal">
 
-                <p>
-                    Những giá trị văn hóa được gìn giữ qua nhiều thế hệ.
-                </p>
+                        <span class="section-tag">
+                            🎎 VĂN HÓA
+                        </span>
 
-            </div>
-
-
-            <div class="culture-list">
-
-
-                <article class="culture-item">
-
-                    <span>01</span>
-
-                    <div>
-
-                        <h3>
-                            Phố cổ
-                        </h3>
+                        <h2>
+                            Bản sắc Việt
+                            <span>ngàn đời</span>
+                        </h2>
 
                         <p>
-                            Không gian đô thị mang nhiều dấu ấn lịch sử
-                            với những con phố và nghề truyền thống.
+                            Văn hóa Việt Nam được hình thành và phát triển
+                            qua hàng nghìn năm lịch sử, với những phong tục,
+                            lễ hội và truyền thống đặc sắc.
                         </p>
+
+
+                        <div class="culture-items">
+
+                            <div class="culture-item">
+
+                                <span>👘</span>
+
+                                <div>
+                                    <h3>Áo dài</h3>
+                                    <p>
+                                        Biểu tượng duyên dáng của người Việt.
+                                    </p>
+                                </div>
+
+                            </div>
+
+
+                            <div class="culture-item">
+
+                                <span>🧧</span>
+
+                                <div>
+                                    <h3>Tết Nguyên Đán</h3>
+                                    <p>
+                                        Dịp đoàn viên quan trọng nhất trong năm.
+                                    </p>
+                                </div>
+
+                            </div>
+
+
+                            <div class="culture-item">
+
+                                <span>🥁</span>
+
+                                <div>
+                                    <h3>Lễ hội truyền thống</h3>
+                                    <p>
+                                        Nhiều lễ hội đặc sắc trải dài khắp đất nước.
+                                    </p>
+                                </div>
+
+                            </div>
+
+                        </div>
 
                     </div>
 
-                </article>
 
+                    <div class="culture-image reveal">
 
-                <article class="culture-item">
+                        <img
+                            src="https://images.unsplash.com/photo-1528181304800-259b08848526?auto=format&fit=crop&w=1200&q=85"
+                            alt="Văn hóa Việt Nam"
+                            loading="lazy"
+                        >
 
-                    <span>02</span>
+                        <div class="culture-quote">
+                            <span>“</span>
 
-                    <div>
+                            <p>
+                                Việt Nam – nơi truyền thống
+                                gặp gỡ nhịp sống hiện đại.
+                            </p>
 
-                        <h3>
-                            Truyền thống hiếu học
-                        </h3>
-
-                        <p>
-                            Hà Nội là nơi tập trung nhiều trường đại học,
-                            di tích giáo dục và giá trị học thuật.
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-                <article class="culture-item">
-
-                    <span>03</span>
-
-                    <div>
-
-                        <h3>
-                            Nghệ thuật
-                        </h3>
-
-                        <p>
-                            Thành phố có đời sống nghệ thuật phong phú,
-                            từ sân khấu truyền thống đến nghệ thuật hiện đại.
-                        </p>
+                        </div>
 
                     </div>
 
-                </article>
-
-
-                <article class="culture-item">
-
-                    <span>04</span>
-
-                    <div>
-
-                        <h3>
-                            Tết Hà Nội
-                        </h3>
-
-                        <p>
-                            Không khí Tết mang những nét đẹp truyền thống
-                            hòa cùng nhịp sống hiện đại.
-                        </p>
-
-                    </div>
-
-                </article>
-
+                </div>
 
             </div>
 
@@ -838,29 +824,496 @@
 
 
         <!-- =========================
-             QUOTE
+             LỊCH SỬ
         ========================== -->
-        <section class="quote">
+        <section class="section history-section" id="lich-su">
 
-            <div>
+            <div class="container">
 
-                <div class="quote-icon">
-                    “
+                <div class="section-heading reveal">
+
+                    <span class="section-tag">
+                        📜 LỊCH SỬ VIỆT NAM
+                    </span>
+
+                    <h2>
+                        Hành trình
+                        <span>ngàn năm</span>
+                    </h2>
+
+                    <p>
+                        Những dấu mốc quan trọng tạo nên Việt Nam hôm nay.
+                    </p>
+
                 </div>
 
+
+                <div class="timeline">
+
+                    <div class="timeline-item reveal">
+
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-date">
+                            THỜI CỔ ĐẠI
+                        </div>
+
+                        <div class="timeline-content">
+
+                            <h3>
+                                Văn Lang – Âu Lạc
+                            </h3>
+
+                            <p>
+                                Những nhà nước đầu tiên trong lịch sử
+                                hình thành cộng đồng dân tộc Việt.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="timeline-item reveal">
+
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-date">
+                            THẾ KỶ XI – XV
+                        </div>
+
+                        <div class="timeline-content">
+
+                            <h3>
+                                Thời kỳ Đại Việt
+                            </h3>
+
+                            <p>
+                                Một giai đoạn phát triển quan trọng về
+                                văn hóa, kinh tế và quốc gia.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="timeline-item reveal">
+
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-date">
+                            1945
+                        </div>
+
+                        <div class="timeline-content">
+
+                            <h3>
+                                Cách mạng Tháng Tám
+                            </h3>
+
+                            <p>
+                                Một dấu mốc lớn trong lịch sử hiện đại
+                                của dân tộc Việt Nam.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="timeline-item reveal">
+
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-date">
+                            1975
+                        </div>
+
+                        <div class="timeline-content">
+
+                            <h3>
+                                Đất nước thống nhất
+                            </h3>
+
+                            <p>
+                                Bắc và Nam thống nhất, mở ra một
+                                giai đoạn mới của đất nước.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="timeline-item reveal">
+
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-date">
+                            VIỆT NAM HÔM NAY
+                        </div>
+
+                        <div class="timeline-content">
+
+                            <h3>
+                                Hội nhập & phát triển
+                            </h3>
+
+                            <p>
+                                Việt Nam đang ngày càng hội nhập sâu rộng
+                                và phát triển trong thời đại hiện đại.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             34 TỈNH THÀNH
+        ========================== -->
+        <section class="section provinces-section" id="tinh-thanh">
+
+            <div class="container">
+
+                <div class="section-heading reveal">
+
+                    <span class="section-tag">KHÁM PHÁ VIỆT NAM</span>
+<h2>34 tỉnh, thành phố</h2>
+<p>
+    Khám phá những vùng đất giàu bản sắc, văn hóa và cảnh đẹp
+    trên khắp Việt Nam.
+</p>
+
+                </div>
+
+
+                <div class="province-search reveal">
+
+                    <div class="search-box">
+
+                        <span>🔍</span>
+
+                        <input
+                            type="text"
+                            id="provinceSearch"
+                            placeholder="Tìm tỉnh, thành phố..."
+                            autocomplete="off"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="province-grid" id="provinceGrid">
+
+    <a href="ha-noi/index.html" class="province-card" data-name="Hà Nội">
+        <span class="province-code">01</span>
+        <div class="province-icon">🏛️</div>
+        <h3>Hà Nội</h3>
+        <p>Thủ đô Việt Nam</p>
+        <span class="province-more">Xem chi tiết →</span>
+    </a>
+
+    <a href="cao-bang/index.html" class="province-card" data-name="Cao Bằng">
+        <span class="province-code">04</span>
+        <div class="province-icon">🏔️</div>
+        <h3>Cao Bằng</h3>
+        <p>Non nước biên cương</p>
+        <span class="province-more">Xem chi tiết →</span>
+    </a>
+
+    <a href="tuyen-quang/index.html" class="province-card" data-name="Tuyên Quang">
+        <span class="province-code">08</span>
+        <div class="province-icon">🏔️</div>
+        <h3>Tuyên Quang</h3>
+        <p>Thủ đô Khu giải phóng</p>
+        <span class="province-more">Xem chi tiết →</span>
+    </a>
+
+    <a href="dien-bien/index.html" class="province-card" data-name="Điện Biên">
+        <span class="province-code">11</span>
+        <div class="province-icon">🏔️</div>
+        <h3>Điện Biên</h3>
+        <p>Vùng đất lịch sử</p>
+        <span class="province-more">Xem chi tiết →</span>
+    </a>
+
+    <a href="lai-chau/index.html" class="province-card" data-name="Lai Châu">
+        <span class="province-code">12</span>
+        <div class="province-icon">⛰️</div>
+        <h3>Lai Châu</h3>
+        <p>Tỉnh miền núi Tây Bắc</p>
+        <span class="province-more">Xem chi tiết →</span>
+    </a>
+
+    <a href="son-la/index.html" class="province-card" data-name="Sơn La">
+        <span class="province-code">14</span>
+        <div class="province-icon">🌄</div>
+        <h3>Sơn La</h3>
+        <p>Tỉnh Tây Bắc</p>
+        <span class="province-more">Xem chi tiết →</span>
+    </a>
+
+    <a href="lao-cai/index.html" class="province-card" data-name="Lào Cai">
+        <span class="province-code">15</span>
+        <div class="province-icon">🏔️</div>
+        <h3>Lào Cai</h3>
+        <p>Sa Pa • Fansipan</p>
+        <span class="province-more">Xem chi tiết →</span>
+    </a>
+
+    <a href="thai-nguyen/index.html" class="province-card" data-name="Thái Nguyên">
+        <span class="province-code">19</span>
+        <div class="province-icon">🍃</div>
+        <h3>Thái Nguyên</h3>
+        <p>Vùng chè nổi tiếng</p>
+        <span class="province-more">Xem chi tiết →</span>
+    </a>
+
+    <a href="lang-son/index.html" class="province-card" data-name="Lạng Sơn">
+        <span class="province-code">20</span>
+        <div class="province-icon">🏞️</div>
+        <h3>Lạng Sơn</h3>
+        <p>Tỉnh biên giới phía Bắc</p>
+        <span class="province-more">Xem chi tiết →</span>
+    </a>
+
+    <a href="quang-ninh/index.html" class="province-card" data-name="Quảng Ninh">
+        <span class="province-code">22</span>
+        <div class="province-icon">🌊</div>
+        <h3>Quảng Ninh</h3>
+        <p>Vịnh Hạ Long</p>
+        <span class="province-more">Xem chi tiết →</span>
+    </a>
+
+    <a href="bac-ninh/index.html" class="province-card" data-name="Bắc Ninh">
+        <span class="province-code">24</span>
+        <div class="province-icon">🎶</div>
+        <h3>Bắc Ninh</h3>
+        <p>Vùng đất Quan họ</p>
+        <span class="province-more">Xem chi tiết →</span>
+    </a>
+
+    <a href="phu-tho/index.html" class="province-card" data-name="Phú Thọ">
+        <span class="province-code">25</span>
+        <div class="province-icon">🏯</div>
+        <h3>Phú Thọ</h3>
+        <p>Đất Tổ Hùng Vương</p>
+        <span class="province-more">Xem chi tiết →</span>
+    </a>
+
+    <a href="hai-phong/index.html" class="province-card" data-name="Hải Phòng">
+        <span class="province-code">31</span>
+        <div class="province-icon">⚓</div>
+        <h3>Hải Phòng</h3>
+        <p>Thành phố cảng</p>
+        <span class="province-more">Xem chi tiết →</span>
+    </a>
+
+    <a href="hung-yen/index.html" class="province-card" data-name="Hưng Yên">
+        <span class="province-code">33</span>
+        <div class="province-icon">🌾</div>
+        <h3>Hưng Yên</h3>
+        <p>Vùng đồng bằng Bắc Bộ</p>
+        <span class="province-more">Xem chi tiết →</span>
+    </a>
+
+    <a href="ninh-binh/index.html" class="province-card" data-name="Ninh Bình">
+        <span class="province-code">37</span>
+        <div class="province-icon">🏞️</div>
+        <h3>Ninh Bình</h3>
+        <p>Tràng An • Tam Cốc</p>
+        <span class="province-more">Xem chi tiết →</span>
+    </a>
+
+    <a href="thanh-hoa/index.html" class="province-card" data-name="Thanh Hóa">
+        <span class="province-code">38</span>
+        <div class="province-icon">🏖️</div>
+        <h3>Thanh Hóa</h3>
+        <p>Xứ Thanh</p>
+        <span class="province-more">Xem chi tiết →</span>
+    </a>
+
+    <a href="nghe-an/index.html" class="province-card" data-name="Nghệ An">
+        <span class="province-code">40</span>
+        <div class="province-icon">🌳</div>
+        <h3>Nghệ An</h3>
+        <p>Quê hương Chủ tịch Hồ Chí Minh</p>
+        <span class="province-more">Xem chi tiết →</span>
+    </a>
+
+    <a href="ha-tinh/index.html" class="province-card" data-name="Hà Tĩnh">
+        <span class="province-code">42</span>
+        <div class="province-icon">🌊</div>
+        <h3>Hà Tĩnh</h3>
+        <p>Miền Trung</p>
+        <span class="province-more">Xem chi tiết →</span>
+    </a>
+
+    <a href="quang-tri/index.html" class="province-card" data-name="Quảng Trị">
+        <span class="province-code">44</span>
+        <div class="province-icon">🏞️</div>
+        <h3>Quảng Trị</h3>
+        <p>Vùng đất lịch sử</p>
+        <span class="province-more">Xem chi tiết →</span>
+    </a>
+
+    <a href="hue/index.html" class="province-card" data-name="Huế">
+        <span class="province-code">46</span>
+        <div class="province-icon">🏯</div>
+        <h3>Huế</h3>
+        <p>Thành phố di sản</p>
+        <span class="province-more">Xem chi tiết →</span>
+    </a>
+
+    <a href="da-nang/index.html" class="province-card" data-name="Đà Nẵng">
+        <span class="province-code">48</span>
+        <div class="province-icon">🌉</div>
+        <h3>Đà Nẵng</h3>
+        <p>Thành phố đáng sống</p>
+        <span class="province-more">Xem chi tiết →</span>
+    </a>
+
+    <a href="quang-ngai/index.html" class="province-card" data-name="Quảng Ngãi">
+        <span class="province-code">51</span>
+        <div class="province-icon">🌊</div>
+        <h3>Quảng Ngãi</h3>
+        <p>Biển đảo miền Trung</p>
+        <span class="province-more">Xem chi tiết →</span>
+    </a>
+
+    <a href="gia-lai/index.html" class="province-card" data-name="Gia Lai">
+        <span class="province-code">52</span>
+        <div class="province-icon">🌲</div>
+        <h3>Gia Lai</h3>
+        <p>Cao nguyên Pleiku</p>
+        <span class="province-more">Xem chi tiết →</span>
+    </a>
+
+    <a href="khanh-hoa/index.html" class="province-card" data-name="Khánh Hòa">
+        <span class="province-code">56</span>
+        <div class="province-icon">🏝️</div>
+        <h3>Khánh Hòa</h3>
+        <p>Nha Trang • Biển xanh</p>
+        <span class="province-more">Xem chi tiết →</span>
+    </a>
+
+    <a href="dak-lak/index.html" class="province-card" data-name="Đắk Lắk">
+        <span class="province-code">66</span>
+        <div class="province-icon">☕</div>
+        <h3>Đắk Lắk</h3>
+        <p>Thủ phủ cà phê</p>
+        <span class="province-more">Xem chi tiết →</span>
+    </a>
+
+    <a href="lam-dong/index.html" class="province-card" data-name="Lâm Đồng">
+        <span class="province-code">68</span>
+        <div class="province-icon">🌲</div>
+        <h3>Lâm Đồng</h3>
+        <p>Đà Lạt • Cao nguyên</p>
+        <span class="province-more">Xem chi tiết →</span>
+    </a>
+
+    <a href="dong-nai/index.html" class="province-card" data-name="Đồng Nai">
+        <span class="province-code">75</span>
+        <div class="province-icon">🏙️</div>
+        <h3>Đồng Nai</h3>
+        <p>Vùng Đông Nam Bộ</p>
+        <span class="province-more">Xem chi tiết →</span>
+    </a>
+
+    <a href="ho-chi-minh/index.html" class="province-card" data-name="Thành phố Hồ Chí Minh">
+        <span class="province-code">79</span>
+        <div class="province-icon">🏙️</div>
+        <h3>TP. Hồ Chí Minh</h3>
+        <p>Đô thị lớn phía Nam</p>
+        <span class="province-more">Xem chi tiết →</span>
+    </a>
+
+    <a href="tay-ninh/index.html" class="province-card" data-name="Tây Ninh">
+        <span class="province-code">80</span>
+        <div class="province-icon">⛰️</div>
+        <h3>Tây Ninh</h3>
+        <p>Núi Bà Đen</p>
+        <span class="province-more">Xem chi tiết →</span>
+    </a>
+
+    <a href="can-tho/index.html" class="province-card" data-name="Cần Thơ">
+        <span class="province-code">92</span>
+        <div class="province-icon">🚤</div>
+        <h3>Cần Thơ</h3>
+        <p>Thủ phủ miền Tây</p>
+        <span class="province-more">Xem chi tiết →</span>
+    </a>
+
+    <a href="vinh-long/index.html" class="province-card" data-name="Vĩnh Long">
+        <span class="province-code">86</span>
+        <div class="province-icon">🌴</div>
+        <h3>Vĩnh Long</h3>
+        <p>Miền Tây sông nước</p>
+        <span class="province-more">Xem chi tiết →</span>
+    </a>
+
+    <a href="dong-thap/index.html" class="province-card" data-name="Đồng Tháp">
+        <span class="province-code">87</span>
+        <div class="province-icon">🌾</div>
+        <h3>Đồng Tháp</h3>
+        <p>Đất Sen hồng</p>
+        <span class="province-more">Xem chi tiết →</span>
+    </a>
+
+    <a href="ca-mau/index.html" class="province-card" data-name="Cà Mau">
+        <span class="province-code">96</span>
+        <div class="province-icon">🌅</div>
+        <h3>Cà Mau</h3>
+        <p>Cực Nam Tổ quốc</p>
+        <span class="province-more">Xem chi tiết →</span>
+    </a>
+
+    <a href="an-giang/index.html" class="province-card" data-name="An Giang">
+        <span class="province-code">91</span>
+        <div class="province-icon">🌴</div>
+        <h3>An Giang</h3>
+        <p>Miền Tây • Biên giới</p>
+        <span class="province-more">Xem chi tiết →</span>
+    </a>
+
+</div>
+
+
+        <!-- =========================
+             QUOTE
+        ========================== -->
+        <section class="quote-section">
+
+            <div class="quote-overlay"></div>
+
+            <div class="container quote-content reveal">
+
+                <span class="quote-symbol">“</span>
+
                 <h2>
-                    Hà Nội — nơi ký ức
-                    gặp gỡ hiện tại.
+                    Việt Nam trong tim tôi
                 </h2>
 
                 <p>
-                    Một thành phố có thể thay đổi từng ngày,
-                    nhưng những giá trị văn hóa và ký ức vẫn luôn
-                    được lưu giữ trong lòng người.
+                    Một dải đất hình chữ S,
+                    nơi mỗi miền quê đều mang một câu chuyện.
                 </p>
 
-                <span>
-                    — HÀ NỘI, VIỆT NAM 🇻🇳
+                <div class="quote-line"></div>
+
+                <span class="quote-flag">
+                    🇻🇳
                 </span>
 
             </div>
@@ -868,34 +1321,155 @@
         </section>
 
 
+        <!-- =========================
+             CTA
+        ========================== -->
+        <section class="cta-section">
+
+            <div class="container">
+
+                <div class="cta-box reveal">
+
+                    <div class="cta-content">
+
+                        <span class="section-tag">
+                            🇻🇳 TÌNH YÊU VIỆT NAM
+                        </span>
+
+                        <h2>
+                            Cùng khám phá
+                            <span>Việt Nam</span>
+                        </h2>
+
+                        <p>
+                            Từ những con phố cổ kính đến những bãi biển
+                            xanh ngát, Việt Nam luôn có một điều gì đó
+                            đặc biệt chờ bạn khám phá.
+                        </p>
+
+                        <a href="#home" class="btn btn-primary">
+                            Bắt đầu hành trình
+                            <span>↑</span>
+                        </a>
+
+                    </div>
+
+                    <div class="cta-decoration">
+                        🇻🇳
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
     </main>
 
 
     <!-- =========================
          FOOTER
     ========================== -->
-    <footer>
+    <footer class="footer">
 
-        <div class="footer-logo">
-            🇻🇳 HÀ NỘI
-        </div>
+        <div class="container">
 
-        <p>
-            Thủ đô ngàn năm văn hiến của Việt Nam.
-        </p>
+            <div class="footer-main">
 
-        <a href="../index.html">
-            ← Quay về 34 Tỉnh, Thành
-        </a>
+                <div class="footer-brand">
 
-        <div class="copyright">
-            © 2026 VIỆT NAM | Đất Nước Tôi Yêu
+                    <a href="#home" class="logo">
+
+                        <span class="logo-icon">
+                            🇻🇳
+                        </span>
+
+                        <span class="logo-text">
+                            <strong>VIỆT NAM</strong>
+                            <small>Đất Nước Tôi Yêu</small>
+                        </span>
+
+                    </a>
+
+                    <p>
+                        Khám phá vẻ đẹp, văn hóa, lịch sử
+                        và con người Việt Nam.
+                    </p>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h3>Khám phá</h3>
+
+                    <a href="#gioi-thieu">Giới thiệu</a>
+                    <a href="#dia-danh">Địa danh</a>
+                    <a href="#am-thuc">Ẩm thực</a>
+                    <a href="#van-hoa">Văn hóa</a>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h3>Thông tin</h3>
+
+                    <a href="#lich-su">Lịch sử</a>
+                    <a href="#tinh-thanh">Tỉnh, thành</a>
+                    <a href="#home">Việt Nam</a>
+
+                </div>
+
+
+                <div class="footer-column">
+
+                    <h3>Theo dõi</h3>
+
+                    <a href="#">Facebook</a>
+                    <a href="#">YouTube</a>
+                    <a href="#">TikTok</a>
+                    <a href="#">Instagram</a>
+
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    © <span id="currentYear"></span>
+                    VIỆT NAM. Made with ❤️ in Vietnam.
+                </p>
+
+                <div class="footer-flag">
+                    🇻🇳 Việt Nam
+                </div>
+
+            </div>
+
         </div>
 
     </footer>
 
 
-    <!-- JS -->
+    <!-- =========================
+         BACK TO TOP
+    ========================== -->
+    <button
+        class="back-top"
+        id="backTop"
+        aria-label="Về đầu trang"
+        title="Về đầu trang"
+    >
+        ↑
+    </button>
+
+
+    <!-- =========================
+         SCRIPT
+    ========================== -->
     <script src="script.js"></script>
 
 </body>
